@@ -1,62 +1,64 @@
 /**
  * app/page.tsx
  *
- * 2-C 확인용 임시 화면입니다.
- * Server Component에서 Supabase 서버 클라이언트가 정상 동작하는지 눈으로 확인합니다.
- * 2-D에서 실제 랜딩 페이지로 교체합니다.
+ * 랜딩 페이지. 로그인하지 않아도 볼 수 있는 유일한 화면입니다.
+ * 실제 랜딩(Hero + 제품 흐름 + 스크린샷)은 STEP 12에서 만듭니다.
  */
 
+import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export default async function Home() {
-  // Server Component에서 Supabase에 접속합니다.
-  // await 두 번에 주의하세요 — createClient도 async 입니다.
   const supabase = await createClient();
   const { data } = await supabase.auth.getClaims();
-  const claims = data?.claims ?? null;
+  const isLoggedIn = Boolean(data?.claims);
 
   return (
-    <main className="flex min-h-svh items-center justify-center bg-muted/30 p-6">
-      <Card className="w-full max-w-md">
-        <CardHeader>
-          <CardTitle>YouTube Planner</CardTitle>
-          <CardDescription>
-            STEP 2-C — Supabase 연결 확인용 화면입니다.
-          </CardDescription>
-        </CardHeader>
+    <main className="flex min-h-svh flex-col items-center justify-center gap-10 bg-muted/30 p-6">
+      <div className="max-w-xl space-y-5 text-center">
+        <h1 className="text-3xl font-bold leading-snug tracking-tight sm:text-4xl">
+          유튜브, 뭘 올려야 할지
+          <br />
+          고민하지 마세요.
+        </h1>
+        <p className="text-base leading-relaxed text-muted-foreground">
+          AI가 당신의 채널에 맞는 영상 아이디어부터 제목, 썸네일,
+          <br className="hidden sm:inline" />
+          영상 기획, 업로드 일정까지 한 곳에서 만들어드립니다.
+        </p>
+      </div>
 
-        <CardContent className="space-y-4">
-          <div className="flex items-center justify-between gap-4 text-sm">
-            <span className="text-muted-foreground">서버 클라이언트</span>
-            <Badge variant="secondary">연결됨</Badge>
-          </div>
+      {/*
+        이 프로젝트의 Button은 @base-ui/react 기반이라 asChild(Slot)가 없습니다.
+        그래서 Button 안에 Link를 넣지 않고,
+        Link 자체에 buttonVariants()가 만든 클래스를 입혀 버튼처럼 보이게 합니다.
 
-          <div className="flex items-center justify-between gap-4 text-sm">
-            <span className="text-muted-foreground">로그인 상태</span>
-            {claims ? (
-              <Badge className="max-w-[220px] truncate">
-                {String(claims.email ?? claims.sub)}
-              </Badge>
-            ) : (
-              <Badge variant="outline">로그인 안 됨</Badge>
-            )}
-          </div>
+        Button 안에 Link를 중첩하면 <button> 안에 <a>가 들어가
+        HTML 규격에도 어긋나고 키보드 동작도 깨집니다.
+      */}
+      <div className="flex w-full max-w-xs flex-col gap-3">
+        {isLoggedIn ? (
+          <Link
+            href="/dashboard"
+            className={cn(buttonVariants({ size: "lg" }), "w-full")}
+          >
+            대시보드로 이동 →
+          </Link>
+        ) : (
+          <Link
+            href="/login"
+            className={cn(buttonVariants({ size: "lg" }), "w-full")}
+          >
+            무료로 시작하기 →
+          </Link>
+        )}
+      </div>
 
-          <p className="border-t pt-4 text-xs leading-relaxed text-muted-foreground">
-            &quot;연결됨 / 로그인 안 됨&quot; 이 보이면 정상입니다.
-            <br />
-            로그인 기능은 다음 단계(2-D)에서 만듭니다.
-          </p>
-        </CardContent>
-      </Card>
+      <p className="text-xs text-muted-foreground">
+        STEP 2-D — 임시 랜딩 화면입니다.
+      </p>
     </main>
   );
 }
