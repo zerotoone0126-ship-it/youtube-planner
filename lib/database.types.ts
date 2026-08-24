@@ -1,4 +1,4 @@
-﻿export type Json =
+export type Json =
   | string
   | number
   | boolean
@@ -223,6 +223,95 @@ export type Database = {
         }
         Relationships: []
       }
+      video_analyses: {
+        Row: {
+          attempt_count: number
+          channel_id: string | null
+          client_request_id: string | null
+          created_at: string
+          current_stage: string | null
+          duration_sec: number | null
+          error_code: string | null
+          error_message: string | null
+          execution_id: string | null
+          file_size_bytes: number | null
+          finished_at: string | null
+          genre: string
+          id: string
+          pipeline_version: string
+          progress: number | null
+          raw_metrics: Json | null
+          report: Json | null
+          run_token: string | null
+          started_at: string | null
+          status: string
+          storage_deleted_at: string | null
+          storage_path: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          attempt_count?: number
+          channel_id?: string | null
+          client_request_id?: string | null
+          created_at?: string
+          current_stage?: string | null
+          duration_sec?: number | null
+          error_code?: string | null
+          error_message?: string | null
+          execution_id?: string | null
+          file_size_bytes?: number | null
+          finished_at?: string | null
+          genre: string
+          id?: string
+          pipeline_version?: string
+          progress?: number | null
+          raw_metrics?: Json | null
+          report?: Json | null
+          run_token?: string | null
+          started_at?: string | null
+          status?: string
+          storage_deleted_at?: string | null
+          storage_path: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          attempt_count?: number
+          channel_id?: string | null
+          client_request_id?: string | null
+          created_at?: string
+          current_stage?: string | null
+          duration_sec?: number | null
+          error_code?: string | null
+          error_message?: string | null
+          execution_id?: string | null
+          file_size_bytes?: number | null
+          finished_at?: string | null
+          genre?: string
+          id?: string
+          pipeline_version?: string
+          progress?: number | null
+          raw_metrics?: Json | null
+          report?: Json | null
+          run_token?: string | null
+          started_at?: string | null
+          status?: string
+          storage_deleted_at?: string | null
+          storage_path?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "video_analyses_channel_id_fkey"
+            columns: ["channel_id"]
+            isOneToOne: false
+            referencedRelation: "channels"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       video_ideas: {
         Row: {
           category: string
@@ -272,7 +361,306 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      acquire_video_analysis_run: {
+        Args: { p_id: string }
+        Returns: {
+          attempt_count: number
+          channel_id: string | null
+          client_request_id: string | null
+          created_at: string
+          current_stage: string | null
+          duration_sec: number | null
+          error_code: string | null
+          error_message: string | null
+          execution_id: string | null
+          file_size_bytes: number | null
+          finished_at: string | null
+          genre: string
+          id: string
+          pipeline_version: string
+          progress: number | null
+          raw_metrics: Json | null
+          report: Json | null
+          run_token: string | null
+          started_at: string | null
+          status: string
+          storage_deleted_at: string | null
+          storage_path: string
+          updated_at: string
+          user_id: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "video_analyses"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
+      cancel_video_analysis: {
+        Args: { p_id: string }
+        Returns: {
+          attempt_count: number
+          channel_id: string | null
+          client_request_id: string | null
+          created_at: string
+          current_stage: string | null
+          duration_sec: number | null
+          error_code: string | null
+          error_message: string | null
+          execution_id: string | null
+          file_size_bytes: number | null
+          finished_at: string | null
+          genre: string
+          id: string
+          pipeline_version: string
+          progress: number | null
+          raw_metrics: Json | null
+          report: Json | null
+          run_token: string | null
+          started_at: string | null
+          status: string
+          storage_deleted_at: string | null
+          storage_path: string
+          updated_at: string
+          user_id: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "video_analyses"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
+      complete_video_analysis: {
+        Args: {
+          p_duration_sec?: number
+          p_id: string
+          p_raw_metrics?: Json
+          p_report: Json
+          p_run_token: string
+        }
+        Returns: {
+          attempt_count: number
+          channel_id: string | null
+          client_request_id: string | null
+          created_at: string
+          current_stage: string | null
+          duration_sec: number | null
+          error_code: string | null
+          error_message: string | null
+          execution_id: string | null
+          file_size_bytes: number | null
+          finished_at: string | null
+          genre: string
+          id: string
+          pipeline_version: string
+          progress: number | null
+          raw_metrics: Json | null
+          report: Json | null
+          run_token: string | null
+          started_at: string | null
+          status: string
+          storage_deleted_at: string | null
+          storage_path: string
+          updated_at: string
+          user_id: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "video_analyses"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
+      create_video_analysis: {
+        Args: {
+          p_channel_id?: string
+          p_client_request_id?: string
+          p_genre: string
+        }
+        Returns: {
+          attempt_count: number
+          channel_id: string | null
+          client_request_id: string | null
+          created_at: string
+          current_stage: string | null
+          duration_sec: number | null
+          error_code: string | null
+          error_message: string | null
+          execution_id: string | null
+          file_size_bytes: number | null
+          finished_at: string | null
+          genre: string
+          id: string
+          pipeline_version: string
+          progress: number | null
+          raw_metrics: Json | null
+          report: Json | null
+          run_token: string | null
+          started_at: string | null
+          status: string
+          storage_deleted_at: string | null
+          storage_path: string
+          updated_at: string
+          user_id: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "video_analyses"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
+      fail_video_analysis: {
+        Args: {
+          p_error_code: string
+          p_error_message?: string
+          p_id: string
+          p_run_token: string
+        }
+        Returns: {
+          attempt_count: number
+          channel_id: string | null
+          client_request_id: string | null
+          created_at: string
+          current_stage: string | null
+          duration_sec: number | null
+          error_code: string | null
+          error_message: string | null
+          execution_id: string | null
+          file_size_bytes: number | null
+          finished_at: string | null
+          genre: string
+          id: string
+          pipeline_version: string
+          progress: number | null
+          raw_metrics: Json | null
+          report: Json | null
+          run_token: string | null
+          started_at: string | null
+          status: string
+          storage_deleted_at: string | null
+          storage_path: string
+          updated_at: string
+          user_id: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "video_analyses"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
+      mark_video_analysis_uploaded: {
+        Args: { p_id: string }
+        Returns: {
+          attempt_count: number
+          channel_id: string | null
+          client_request_id: string | null
+          created_at: string
+          current_stage: string | null
+          duration_sec: number | null
+          error_code: string | null
+          error_message: string | null
+          execution_id: string | null
+          file_size_bytes: number | null
+          finished_at: string | null
+          genre: string
+          id: string
+          pipeline_version: string
+          progress: number | null
+          raw_metrics: Json | null
+          report: Json | null
+          run_token: string | null
+          started_at: string | null
+          status: string
+          storage_deleted_at: string | null
+          storage_path: string
+          updated_at: string
+          user_id: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "video_analyses"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
+      queue_video_analysis: {
+        Args: { p_id: string }
+        Returns: {
+          attempt_count: number
+          channel_id: string | null
+          client_request_id: string | null
+          created_at: string
+          current_stage: string | null
+          duration_sec: number | null
+          error_code: string | null
+          error_message: string | null
+          execution_id: string | null
+          file_size_bytes: number | null
+          finished_at: string | null
+          genre: string
+          id: string
+          pipeline_version: string
+          progress: number | null
+          raw_metrics: Json | null
+          report: Json | null
+          run_token: string | null
+          started_at: string | null
+          status: string
+          storage_deleted_at: string | null
+          storage_path: string
+          updated_at: string
+          user_id: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "video_analyses"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
+      update_video_analysis_progress: {
+        Args: {
+          p_id: string
+          p_progress: number
+          p_run_token: string
+          p_stage: string
+        }
+        Returns: {
+          attempt_count: number
+          channel_id: string | null
+          client_request_id: string | null
+          created_at: string
+          current_stage: string | null
+          duration_sec: number | null
+          error_code: string | null
+          error_message: string | null
+          execution_id: string | null
+          file_size_bytes: number | null
+          finished_at: string | null
+          genre: string
+          id: string
+          pipeline_version: string
+          progress: number | null
+          raw_metrics: Json | null
+          report: Json | null
+          run_token: string | null
+          started_at: string | null
+          status: string
+          storage_deleted_at: string | null
+          storage_path: string
+          updated_at: string
+          user_id: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "video_analyses"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
     }
     Enums: {
       [_ in never]: never

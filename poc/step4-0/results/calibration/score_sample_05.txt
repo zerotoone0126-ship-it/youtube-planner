@@ -1,0 +1,45 @@
+# sample_05: 8 detected candidates, 8 labeled as detected_candidate, 36 human_added_missed_edit rows
+category breakdown among labeled detected_candidate rows: {'full_cut': 8}
+
+PRECISION: TP=8 FP=0 -> 1.000
+
+RECALL (independent full-review evidence present: 36 missed-edit rows): TP=8 FN=36 -> 0.182
+  false negatives (real edits the detector missed entirely, found by independent review):
+    t=1.93s -> full_cut
+    t=7.63s -> full_cut
+    t=9.13s -> full_cut
+    t=28.87s -> full_cut
+    t=32.17s -> full_cut
+    t=54.30s -> full_cut
+    t=64.43s -> full_cut
+    t=67.23s -> full_cut
+    t=69.40s -> full_cut
+    t=72.47s -> full_cut
+    t=82.37s -> full_cut
+    t=86.83s -> full_cut
+    t=89.60s -> full_cut
+    t=93.33s -> full_cut
+    t=96.73s -> full_cut
+    t=107.17s -> full_cut
+    t=111.80s -> full_cut
+    t=117.50s -> full_cut
+    t=121.30s -> full_cut
+    t=122.60s -> full_cut
+    t=126.20s -> full_cut
+    t=130.33s -> full_cut
+    t=135.77s -> full_cut
+    t=140.07s -> full_cut
+    t=141.07s -> full_cut
+    t=142.67s -> full_cut
+    t=145.77s -> full_cut
+    t=147.97s -> full_cut
+    t=148.83s -> full_cut
+    t=154.03s -> full_cut
+    t=165.77s -> full_cut
+    t=168.80s -> full_cut
+    t=171.00s -> full_cut
+    t=175.00s -> full_cut
+    t=175.67s -> full_cut
+    t=182.07s -> full_cut
+
+F1 = 0.308

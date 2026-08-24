@@ -1,0 +1,14 @@
+# story_01: 221 sampled frame-pairs at ~5.0fps (source 30.0fps, grid=4x4, topk=3, width=240)
+signal,p10,p25,p50,p75,p90,p95,p99,max
+whole_frame_diff,4.6000,11.2000,22.2000,33.2000,39.8000,42.0000,43.7600,44.2000
+tile_max_diff,0.3261,2.6912,13.9088,43.2277,84.9776,106.8685,139.1390,197.0486
+tile_topk_mean,1.3810,9.9868,40.7105,101.2385,153.0000,201.8436,244.8038,254.9326
+optical_flow_mag,1.0861,8.8338,36.2166,80.2331,142.6204,187.9319,235.6763,254.8231
+ssim_change,0.0302,0.2718,1.6467,5.0708,8.2911,11.1761,24.1516,55.9360
+
+# Anchor cross-check (qualitative only -- our own prior MAFD-based cut candidates, NOT human ground truth)
+anchor_sec,nearest_sample_sec,whole_frame_diff_value,whole_frame_diff_percentile_rank,tile_max_diff_value,tile_max_diff_percentile_rank,tile_topk_mean_value,tile_topk_mean_percentile_rank,optical_flow_mag_value,optical_flow_mag_percentile_rank,ssim_change_value,ssim_change_percentile_rank
+2.53,2.60,2.6000,5.4,179.4046,99.1,245.0137,98.6,238.7811,98.6,7.3798,86.4
+11.97,12.00,12.0000,26.7,197.0486,99.5,243.9640,98.2,240.5200,99.1,6.1683,80.5
+21.30,21.40,21.4000,48.0,101.7781,93.2,111.5697,79.2,109.4766,84.2,0.9882,38.9
+24.37,24.40,24.4000,54.8,100.7830,92.3,135.3725,84.6,132.2361,87.3,4.6257,71.0

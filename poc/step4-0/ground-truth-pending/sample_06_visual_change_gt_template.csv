@@ -1,0 +1,5 @@
+video_id,timestamp_sec,mafd,source,label_type,labeler_id,notes
+sample_06,10.73,22.008,detected_candidate,full_cut,user_chat_confirm,"사용자가 candidate #1 triplet 확인 후 채팅으로 확정 (2026-08-23)"
+sample_06,17.23,22.544,detected_candidate,full_cut,user_chat_confirm,"사용자가 candidate #2 triplet 확인 후 채팅으로 확정 (2026-08-23)"
+sample_06,45.97,22.43,detected_candidate,full_cut,user_chat_confirm,"사용자가 candidate #3 triplet 확인 후 채팅으로 확정 (2026-08-23)"
+sample_06,,,,CONFIRM_NO_ADDITIONAL_MISSED_CUTS,user_chat_confirm,"사용자가 전체 영상(50.4초)을 독립적으로 재검수, 큰 변화 후보뿐 아니라 낮은 변화량 지점들도 전후 프레임으로 확인함 -- 동일 인물/동일 장면 내 움직임으로 판단되어 추가 실제 편집 없음으로 명시적으로 확정 (2026-08-23)"

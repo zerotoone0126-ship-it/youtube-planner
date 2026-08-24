@@ -1,0 +1,130 @@
+{
+  "calibration_video": "game_01",
+  "holdout_video": "sample_02",
+  "signals": {
+    "whole_frame_diff": {
+      "frozen_threshold": 3.07584,
+      "calibration_f1": 0.8,
+      "holdout_f1": 0.8571428571428571,
+      "holdout_precision": 1.0,
+      "holdout_recall": 0.75,
+      "tp": 3,
+      "fp": 0,
+      "fn": 1,
+      "tn": 4,
+      "fp_examples": [],
+      "fn_examples": [
+        {
+          "start": 58.0,
+          "end": 59.5,
+          "frac_static": 0.375
+        }
+      ],
+      "verdict": "채택 후보"
+    },
+    "tile_max_diff": {
+      "frozen_threshold": 10.830869999999999,
+      "calibration_f1": 0.7272727272727273,
+      "holdout_f1": 0.0,
+      "holdout_precision": 0.0,
+      "holdout_recall": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "tn": 4,
+      "fp_examples": [],
+      "fn_examples": [
+        {
+          "start": 15.0,
+          "end": 17.5,
+          "frac_static": 0.308
+        },
+        {
+          "start": 38.0,
+          "end": 40.5,
+          "frac_static": 0.385
+        },
+        {
+          "start": 58.0,
+          "end": 59.5,
+          "frac_static": 0.125
+        },
+        {
+          "start": 88.0,
+          "end": 89.5,
+          "frac_static": 0.25
+        }
+      ],
+      "verdict": "제외 후보"
+    },
+    "tile_topk_mean": {
+      "frozen_threshold": 8.763160000000001,
+      "calibration_f1": 0.7272727272727273,
+      "holdout_f1": 0.0,
+      "holdout_precision": 0.0,
+      "holdout_recall": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "tn": 4,
+      "fp_examples": [],
+      "fn_examples": [
+        {
+          "start": 15.0,
+          "end": 17.5,
+          "frac_static": 0.385
+        },
+        {
+          "start": 38.0,
+          "end": 40.5,
+          "frac_static": 0.462
+        },
+        {
+          "start": 58.0,
+          "end": 59.5,
+          "frac_static": 0.25
+        },
+        {
+          "start": 88.0,
+          "end": 89.5,
+          "frac_static": 0.25
+        }
+      ],
+      "verdict": "제외 후보"
+    },
+    "optical_flow_mag": {
+      "frozen_threshold": 0.7261,
+      "calibration_f1": 0.8,
+      "holdout_f1": 0.888888888888889,
+      "holdout_precision": 0.8,
+      "holdout_recall": 1.0,
+      "tp": 4,
+      "fp": 1,
+      "fn": 0,
+      "tn": 3,
+      "fp_examples": [
+        {
+          "start": 75.0,
+          "end": 82.0,
+          "frac_static": 0.556
+        }
+      ],
+      "fn_examples": [],
+      "verdict": "채택 후보"
+    },
+    "ssim_change": {
+      "frozen_threshold": 0.07614000000000001,
+      "calibration_f1": 0.8,
+      "holdout_f1": 1.0,
+      "holdout_precision": 1.0,
+      "holdout_recall": 1.0,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "tn": 4,
+      "fp_examples": [],
+      "fn_examples": [],
+      "verdict": "채택 후보"
+    }
+  }
+}

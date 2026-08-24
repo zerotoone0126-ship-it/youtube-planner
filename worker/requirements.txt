@@ -1,0 +1,9 @@
+# worker/requirements.txt
+#
+# ⚠️ 이번 세션은 PyPI(pypi.org)에 대한 pip install이 조직 정책으로 막혀 있어서
+# (403, x-deny-reason: host_not_allowed) 이 파일로 실제 `pip install -r
+# worker/requirements.txt`를 실행해서 검증하지 못했습니다. 버전 번호는
+# 지어내지 않고 GitHub의 공식 releases 페이지(supabase/supabase-py)에서
+# 확인한 최신 안정 버전(v2.31.0, 2026년 6월 4일 릴리스로 표기됨)을 그대로
+# 사용합니다. 배포 전 실제 환경에서 설치 및 import를 한 번은 확인하세요.
+supabase==2.31.0

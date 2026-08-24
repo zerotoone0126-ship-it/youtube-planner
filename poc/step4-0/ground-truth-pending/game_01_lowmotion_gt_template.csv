@@ -1,0 +1,9 @@
+video_id,label_type,start_sec,end_sec,labeler_id,notes
+game_01,positive_static,12,16,user_chat_confirm,"사용자가 균일 샘플링 contact sheet + timecode 재생 영상을 직접 보고 채팅으로 지정 (2026-08-23), 탐지 결과 미참고"
+game_01,positive_static,47,51,user_chat_confirm,"사용자가 균일 샘플링 contact sheet + timecode 재생 영상을 직접 보고 채팅으로 지정 (2026-08-23), 탐지 결과 미참고"
+game_01,positive_static,103,107,user_chat_confirm,"사용자가 균일 샘플링 contact sheet + timecode 재생 영상을 직접 보고 채팅으로 지정 (2026-08-23), 탐지 결과 미참고"
+game_01,positive_static,150,154,user_chat_confirm,"사용자가 균일 샘플링 contact sheet + timecode 재생 영상을 직접 보고 채팅으로 지정 (2026-08-23), 탐지 결과 미참고"
+game_01,negative_active,22,27,user_chat_confirm,"사용자가 균일 샘플링 contact sheet + timecode 재생 영상을 직접 보고 채팅으로 지정 (2026-08-23), 탐지 결과 미참고"
+game_01,negative_active,63,68,user_chat_confirm,"사용자가 균일 샘플링 contact sheet + timecode 재생 영상을 직접 보고 채팅으로 지정 (2026-08-23), 탐지 결과 미참고"
+game_01,negative_active,84,89,user_chat_confirm,"사용자가 균일 샘플링 contact sheet + timecode 재생 영상을 직접 보고 채팅으로 지정 (2026-08-23), 탐지 결과 미참고"
+game_01,negative_active,126,131,user_chat_confirm,"사용자가 균일 샘플링 contact sheet + timecode 재생 영상을 직접 보고 채팅으로 지정 (2026-08-23), 탐지 결과 미참고"

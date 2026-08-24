@@ -1,0 +1,5 @@
+video_id,event_type,start_sec,end_sec
+story_01,silence,0.0,44.2341
+story_01,black,5.23333,6.03333
+story_01,black,10.0333,10.2667
+story_01,black,11.9667,12.1

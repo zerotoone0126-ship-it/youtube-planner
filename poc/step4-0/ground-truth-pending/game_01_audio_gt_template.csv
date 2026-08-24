@@ -1,0 +1,4 @@
+video_id,event_type,start_sec,end_sec,labeler_id,notes
+game_01,PENDING_USER_LISTEN,131.7,132.1,,"[대기 중] 사용자가 직접 클립을 들은 뒤 이 행의 event_type을 loud_event(갑자기 튀는 소리) 또는 normal_loud_event(정상적으로 크게 말한 발화/리액션)로 바꿔서 확정해주세요. Claude는 오디오를 직접 청취해 이런 질적 판단을 내릴 수 있는 기능이 없어 이 항목을 대신 채우지 않습니다."
+game_01,intermittent_silence,132.19,132.48,,"사용자 재확인(2026-08-23): 132.1~132.9초 구간 전체가 연속 무음이 아니라 짧은 무음이 간헐적으로 끼어 있는 형태로 확인됨. 이 행은 그 첫 번째 무음 구간."
+game_01,intermittent_silence,132.59,132.83,,"사용자 재확인(2026-08-23): 위와 동일한 간헐적 무음 패턴의 두 번째 구간. 132.48~132.59초, 132.83~132.9초 등 나머지 구간에는 오디오 신호가 있음(연속 silence 아님)."

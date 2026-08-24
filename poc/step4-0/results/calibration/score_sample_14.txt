@@ -1,0 +1,14 @@
+# sample_14: 4 detected candidates, 4 labeled as detected_candidate, 3 human_added_missed_edit rows
+category breakdown among labeled detected_candidate rows: {'full_cut': 3, 'game_visual_change': 1}
+
+PRECISION: TP=3 FP=1 -> 0.750
+  false positives (detected but NOT a real edit):
+    t=9.73s -> labeled game_visual_change
+
+RECALL (independent full-review evidence present: sentinel + 3 missed-edit rows): TP=3 FN=3 -> 0.500
+  false negatives (real edits the detector missed entirely, found by independent review):
+    t=28.30s -> full_cut
+    t=41.87s -> full_cut
+    t=46.17s -> full_cut
+
+F1 = 0.600

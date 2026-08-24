@@ -1,0 +1,8 @@
+# sample_06: 3 detected candidates, 3 labeled as detected_candidate, 0 human_added_missed_edit rows
+category breakdown among labeled detected_candidate rows: {'full_cut': 3}
+
+PRECISION: TP=3 FP=0 -> 1.000
+
+RECALL (independent full-review evidence present: sentinel): TP=3 FN=0 -> 1.000
+
+F1 = 1.000

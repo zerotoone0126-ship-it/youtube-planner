@@ -1,0 +1,9 @@
+video_id,timestamp_sec,mafd,source,label_type,labeler_id,notes
+sample_14,4.4,8.559,detected_candidate,full_cut,user_chat_confirm,"사용자가 candidate #1 triplet 확인 후 채팅으로 확정 (2026-08-23)"
+sample_14,9.73333,8.108,detected_candidate,game_visual_change,user_chat_confirm,"사용자 판단: 전후 인접 프레임이 같은 전투 장면으로 연속되고 스킬/전투 이펙트로 변화량이 커진 경우, 실제 편집 컷 아님 (2026-08-23)"
+sample_14,13.5333,7.531,detected_candidate,full_cut,user_chat_confirm,"사용자가 candidate #3 triplet 확인 후 채팅으로 확정 (2026-08-23)"
+sample_14,30.1,7.071,detected_candidate,full_cut,user_chat_confirm,"사용자가 candidate #4 triplet 확인 후 채팅으로 확정 (2026-08-23)"
+sample_14,28.30,,human_added_missed_edit,full_cut,user_chat_confirm,"사용자 전체 영상 독립 검수로 발견: 직전/직후 프레임 사이 게임 위치/장면이 한 프레임 단위로 불연속적으로 바뀜 (2026-08-23)"
+sample_14,41.87,,human_added_missed_edit,full_cut,user_chat_confirm,"사용자 전체 영상 독립 검수로 발견: 직전/직후 프레임 사이 게임 위치/장면이 한 프레임 단위로 불연속적으로 바뀜 (2026-08-23)"
+sample_14,46.17,,human_added_missed_edit,full_cut,user_chat_confirm,"사용자 전체 영상 독립 검수로 발견: 직전/직후 프레임 사이 게임 위치/장면이 한 프레임 단위로 불연속적으로 바뀜 (2026-08-23)"
+sample_14,,,,CONFIRM_NO_ADDITIONAL_MISSED_CUTS,user_chat_confirm,"사용자가 주요 frame-difference peak들을 전후 인접 프레임으로 재확인, 위 3건 외 추가 actual edit는 확인하지 못했다고 명시적으로 확정 (2026-08-23)"

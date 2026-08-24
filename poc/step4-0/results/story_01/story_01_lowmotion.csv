@@ -1,0 +1,2 @@
+video_id,start_sec,end_sec,source,ydif_threshold,window_sec,min_duration_sec
+story_01,38.1667,44.2,freeze_or_low_motion,2.0,5.0,5.0

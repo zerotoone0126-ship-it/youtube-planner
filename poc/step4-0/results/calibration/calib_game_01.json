@@ -1,0 +1,137 @@
+{
+  "video_id": "game_01",
+  "n_pos": 4,
+  "n_neg": 4,
+  "signals": {
+    "whole_frame_diff": {
+      "chosen_percentile": 45,
+      "chosen_threshold": 3.07584,
+      "calibration_f1": 0.8,
+      "calibration_precision": 0.6666666666666666,
+      "calibration_recall": 1.0,
+      "tp": 4,
+      "fp": 2,
+      "fn": 0,
+      "tn": 2,
+      "fp_examples": [
+        {
+          "start": 22.0,
+          "end": 27.0,
+          "frac_static": 0.731
+        },
+        {
+          "start": 84.0,
+          "end": 89.0,
+          "frac_static": 0.808
+        }
+      ],
+      "fn_examples": []
+    },
+    "tile_max_diff": {
+      "chosen_percentile": 45,
+      "chosen_threshold": 10.830869999999999,
+      "calibration_f1": 0.7272727272727273,
+      "calibration_precision": 0.5714285714285714,
+      "calibration_recall": 1.0,
+      "tp": 4,
+      "fp": 3,
+      "fn": 0,
+      "tn": 1,
+      "fp_examples": [
+        {
+          "start": 22.0,
+          "end": 27.0,
+          "frac_static": 0.731
+        },
+        {
+          "start": 84.0,
+          "end": 89.0,
+          "frac_static": 0.769
+        },
+        {
+          "start": 126.0,
+          "end": 131.0,
+          "frac_static": 0.5
+        }
+      ],
+      "fn_examples": []
+    },
+    "tile_topk_mean": {
+      "chosen_percentile": 45,
+      "chosen_threshold": 8.763160000000001,
+      "calibration_f1": 0.7272727272727273,
+      "calibration_precision": 0.5714285714285714,
+      "calibration_recall": 1.0,
+      "tp": 4,
+      "fp": 3,
+      "fn": 0,
+      "tn": 1,
+      "fp_examples": [
+        {
+          "start": 22.0,
+          "end": 27.0,
+          "frac_static": 0.692
+        },
+        {
+          "start": 84.0,
+          "end": 89.0,
+          "frac_static": 0.769
+        },
+        {
+          "start": 126.0,
+          "end": 131.0,
+          "frac_static": 0.5
+        }
+      ],
+      "fn_examples": []
+    },
+    "optical_flow_mag": {
+      "chosen_percentile": 50,
+      "chosen_threshold": 0.7261,
+      "calibration_f1": 0.8,
+      "calibration_precision": 0.6666666666666666,
+      "calibration_recall": 1.0,
+      "tp": 4,
+      "fp": 2,
+      "fn": 0,
+      "tn": 2,
+      "fp_examples": [
+        {
+          "start": 22.0,
+          "end": 27.0,
+          "frac_static": 0.692
+        },
+        {
+          "start": 84.0,
+          "end": 89.0,
+          "frac_static": 0.923
+        }
+      ],
+      "fn_examples": []
+    },
+    "ssim_change": {
+      "chosen_percentile": 45,
+      "chosen_threshold": 0.07614000000000001,
+      "calibration_f1": 0.8,
+      "calibration_precision": 0.6666666666666666,
+      "calibration_recall": 1.0,
+      "tp": 4,
+      "fp": 2,
+      "fn": 0,
+      "tn": 2,
+      "fp_examples": [
+        {
+          "start": 22.0,
+          "end": 27.0,
+          "frac_static": 0.577
+        },
+        {
+          "start": 84.0,
+          "end": 89.0,
+          "frac_static": 0.846
+        }
+      ],
+      "fn_examples": []
+    }
+  }
+}

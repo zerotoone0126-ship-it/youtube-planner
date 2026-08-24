@@ -334,3 +334,37 @@ export function isPlanUpToDate(project: ContentProject): boolean {
   const currentTitle = project.selected_title ?? project.working_title;
   return project.plan.generatedForTitle === currentTitle;
 }
+
+/* ============================================================
+ * 10. video_analyses (STEP 4-1/4-2)
+ *
+ * status/genre/error_code는 DB의 CHECK 제약(0005)과 정확히 같은 값 목록입니다.
+ * ============================================================ */
+
+/** video_analyses.genre */
+export const VIDEO_ANALYSIS_GENRES = ["game", "story", "info"] as const;
+export type VideoAnalysisGenre = (typeof VIDEO_ANALYSIS_GENRES)[number];
+export const VIDEO_ANALYSIS_GENRE_LABEL: Record<VideoAnalysisGenre, string> = {
+  game: "게임",
+  story: "스토리",
+  info: "정보",
+};
+
+/** video_analyses.status */
+export const VIDEO_ANALYSIS_STATUSES = [
+  "pending", "uploaded", "queued", "processing", "completed", "failed", "cancelled",
+] as const;
+export type VideoAnalysisStatus = (typeof VIDEO_ANALYSIS_STATUSES)[number];
+
+/** video_analyses.error_code */
+export const VIDEO_ANALYSIS_ERROR_CODES = [
+  "upload_failed", "unsupported_format", "processing_timeout",
+  "pipeline_error", "internal_error",
+] as const;
+export type VideoAnalysisErrorCode = (typeof VIDEO_ANALYSIS_ERROR_CODES)[number];
+
+export type VideoAnalysis = Omit<Row<"video_analyses">, "genre" | "status" | "error_code"> & {
+  genre: VideoAnalysisGenre;
+  status: VideoAnalysisStatus;
+  error_code: VideoAnalysisErrorCode | null;
+};

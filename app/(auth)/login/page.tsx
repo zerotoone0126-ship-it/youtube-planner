@@ -10,6 +10,7 @@
 
 import Link from "next/link";
 import { GoogleSignInButton } from "@/components/google-sign-in-button";
+import { DevLoginForm } from "@/components/dev-login-form";
 import {
   Card,
   CardContent,
@@ -54,6 +55,8 @@ export default async function LoginPage(props: {
             )}
 
             <GoogleSignInButton next={next} />
+
+            {process.env.NEXT_PUBLIC_ENABLE_DEV_LOGIN === "true" && <DevLoginForm />}
 
             <p className="text-center text-xs leading-relaxed text-muted-foreground">
               계속하면 서비스 이용약관과

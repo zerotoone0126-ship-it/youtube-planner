@@ -1,0 +1,9 @@
+video_id,label_type,start_sec,end_sec,labeler_id,notes
+sample_02,positive_static,15.0,17.5,user_chat_confirm,"사용자가 원본 영상을 독립적으로 보고 채팅으로 지정 (2026-08-23), detector 결과 미참고, game_01 threshold와 무관하게 선정"
+sample_02,positive_static,38.0,40.5,user_chat_confirm,"사용자가 원본 영상을 독립적으로 보고 채팅으로 지정 (2026-08-23), detector 결과 미참고"
+sample_02,positive_static,58.0,59.5,user_chat_confirm,"사용자가 원본 영상을 독립적으로 보고 채팅으로 지정 (2026-08-23), detector 결과 미참고"
+sample_02,positive_static,88.0,89.5,user_chat_confirm,"사용자가 원본 영상을 독립적으로 보고 채팅으로 지정 (2026-08-23), detector 결과 미참고"
+sample_02,negative_active,8.0,13.0,user_chat_confirm,"사용자가 원본 영상을 독립적으로 보고 채팅으로 지정 (2026-08-23), detector 결과 미참고"
+sample_02,negative_active,18.0,22.0,user_chat_confirm,"사용자 지정: 화면 일부 게임/PIP 영역의 움직임을 포함하는 active 사례 (2026-08-23)"
+sample_02,negative_active,41.0,46.0,user_chat_confirm,"사용자 지정: 화면 일부 게임/PIP 영역의 움직임을 포함하는 active 사례 (2026-08-23)"
+sample_02,negative_active,75.0,82.0,user_chat_confirm,"사용자가 원본 영상을 독립적으로 보고 채팅으로 지정 (2026-08-23), detector 결과 미참고"

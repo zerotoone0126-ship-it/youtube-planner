@@ -1,0 +1,2 @@
+video_id,genre,label_type,start_sec,end_sec,text,style_tag,labeler_id,notes
+game_01,game,partial_edit,176.77,,,,user_chat_confirm,"2026-08-23 채팅으로 확정. 메인 인물/베이스 장면은 이어지고 상단 인서트/레이아웃 요소가 변경되는 형태. 원래 Claude 예비 확인은 미분류(판단 보류)였음."

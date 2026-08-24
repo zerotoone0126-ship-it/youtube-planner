@@ -1,0 +1,17 @@
+sample_id,status,duration_s,resolution,processing_time_s,processing_ratio_pct,cut_threshold_method,cut_threshold_value,n_cut_candidates,n_black_events,n_freeze_events,n_silence_events,lowmotion_baseline_pct_of_video,n_candidate_loud_event,n_candidate_silence,mean_volume_db,max_volume_db
+sample_01,OK,56.2,632x960,9.72,17.3,no_clean_gap_fallback_percentile,6.713,4,0,2,1,51.0,2,1,-23.2,-1.1
+sample_02,OK,92.2,542x960,14.89,16.2,no_clean_gap_fallback_percentile,17.454,11,0,0,1,20.9,6,1,-19.0,-0.1
+sample_03,OK,158.4,540x960,29.19,18.4,no_clean_gap_fallback_percentile,13.355,10,0,0,0,53.3,6,0,-18.7,-0.3
+sample_04,OK,47.1,542x960,7.28,15.5,clean_gap,11.681,1,0,1,0,99.6,2,0,-21.2,-0.5
+sample_05,OK,182.7,538x960,31.98,17.5,no_clean_gap_fallback_percentile,27.283,8,0,0,0,99.9,8,0,-17.1,-3.0
+sample_06,OK,50.4,546x960,9.08,18.0,clean_gap,16.029,3,0,0,1,51.9,3,1,-20.9,-0.5
+sample_07,OK,40.0,542x960,8.02,20.0,no_clean_gap_fallback_percentile,23.676,15,0,0,1,0.0,2,1,-22.7,-1.8
+sample_08,OK,85.8,544x960,15.46,18.0,no_clean_gap_fallback_percentile,19.214,19,0,0,0,0.0,4,0,-17.5,-4.3
+sample_09,OK,60.1,542x960,10.52,17.5,no_clean_gap_fallback_percentile,18.293,24,0,0,1,0.0,4,1,-21.6,-0.0
+sample_10,OK,40.8,538x960,7.42,18.2,clean_gap,11.24,19,0,0,0,0.0,3,0,-19.1,-1.9
+sample_11,OK,98.0,544x960,18.83,19.2,no_clean_gap_fallback_percentile,12.835,30,0,1,0,1.6,5,0,-16.9,-1.3
+sample_12,OK,48.3,538x960,7.36,15.2,clean_gap,12.47,1,0,0,0,99.3,3,0,-20.7,-0.2
+sample_13,OK,49.7,540x960,8.1,16.3,clean_gap,13.337,1,0,0,6,26.0,3,6,-21.4,-2.3
+sample_14,OK,47.3,540x960,7.78,16.4,no_clean_gap_fallback_percentile,7.046,4,0,0,0,0.0,2,0,-16.6,-6.4
+sample_15,OK,74.5,534x960,13.03,17.5,no_clean_gap_fallback_percentile,11.542,35,0,0,0,0.0,5,0,-16.9,-0.3
+sample_16,NOT_UPLOADED,21.5,,,,,,,,,,,,,,

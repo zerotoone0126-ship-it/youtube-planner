@@ -1,0 +1,3 @@
+video_id,start_sec,end_sec,source,ydif_threshold,window_sec,min_duration_sec
+game_01,0.0,68.7,freeze_or_low_motion,2.0,5.0,5.0
+game_01,80.3333,179.033,freeze_or_low_motion,2.0,5.0,5.0

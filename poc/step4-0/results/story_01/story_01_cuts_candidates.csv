@@ -1,0 +1,5 @@
+video_id,timestamp_sec,mafd,threshold_used,persist_frames_used
+story_01,2.53333,56.988,25.0,2
+story_01,11.9667,65.936,25.0,2
+story_01,21.3,46.341,25.0,2
+story_01,24.3667,32.395,25.0,2

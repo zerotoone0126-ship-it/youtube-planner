@@ -1,0 +1,23 @@
+video_id,event_type,start_sec,end_sec,peak_or_min_M,note
+game_01,candidate_silence,0.348979,1.20342,,copied from silencedetect (ffmpeg); relabeled as candidate pending human review of context
+game_01,candidate_silence,2.34844,2.93298,,copied from silencedetect (ffmpeg); relabeled as candidate pending human review of context
+game_01,candidate_loud_event,7.1,7.1,-14.39,"statistical top 1.0% of momentary loudness (M) in this video; NOT a confirmed problem, content unheard by Claude"
+game_01,candidate_loud_event,7.7,7.9,-13.54,"statistical top 1.0% of momentary loudness (M) in this video; NOT a confirmed problem, content unheard by Claude"
+game_01,candidate_loud_event,8.5,8.5,-14.01,"statistical top 1.0% of momentary loudness (M) in this video; NOT a confirmed problem, content unheard by Claude"
+game_01,candidate_silence,21.8505,22.4867,,copied from silencedetect (ffmpeg); relabeled as candidate pending human review of context
+game_01,candidate_loud_event,34.7,34.8,-13.51,"statistical top 1.0% of momentary loudness (M) in this video; NOT a confirmed problem, content unheard by Claude"
+game_01,candidate_loud_event,35.9,35.9,-14.24,"statistical top 1.0% of momentary loudness (M) in this video; NOT a confirmed problem, content unheard by Claude"
+game_01,candidate_loud_event,40.8,40.8,-14.0,"statistical top 1.0% of momentary loudness (M) in this video; NOT a confirmed problem, content unheard by Claude"
+game_01,candidate_silence,56.0512,56.5934,,copied from silencedetect (ffmpeg); relabeled as candidate pending human review of context
+game_01,candidate_silence,62.6879,63.3228,,copied from silencedetect (ffmpeg); relabeled as candidate pending human review of context
+game_01,candidate_loud_event,67.2,67.2,-14.1,"statistical top 1.0% of momentary loudness (M) in this video; NOT a confirmed problem, content unheard by Claude"
+game_01,candidate_silence,90.4941,91.7567,,copied from silencedetect (ffmpeg); relabeled as candidate pending human review of context
+game_01,candidate_silence,92.4364,94.4076,,copied from silencedetect (ffmpeg); relabeled as candidate pending human review of context
+game_01,candidate_silence,115.319,116.295,,copied from silencedetect (ffmpeg); relabeled as candidate pending human review of context
+game_01,candidate_loud_event,131.7,132.1,-12.24,"statistical top 1.0% of momentary loudness (M) in this video; NOT a confirmed problem, content unheard by Claude"
+game_01,candidate_silence,132.122,132.933,,copied from silencedetect (ffmpeg); relabeled as candidate pending human review of context
+game_01,candidate_silence,137.542,138.062,,copied from silencedetect (ffmpeg); relabeled as candidate pending human review of context
+game_01,candidate_loud_event,155.7,155.9,-13.61,"statistical top 1.0% of momentary loudness (M) in this video; NOT a confirmed problem, content unheard by Claude"
+game_01,candidate_silence,175.34,175.954,,copied from silencedetect (ffmpeg); relabeled as candidate pending human review of context
+game_01,candidate_silence,176.363,177.022,,copied from silencedetect (ffmpeg); relabeled as candidate pending human review of context
+game_01,candidate_silence,177.349,178.203,,copied from silencedetect (ffmpeg); relabeled as candidate pending human review of context

@@ -1,0 +1,4 @@
+video_id,segment_id,start_sec,end_sec,ref_text,labeler_id,notes
+game_01,seg1,0.00,15.00,,,"[사람이 직접 클립을 듣고 실제 발화 내용을 그대로 받아쓰기 -- Claude는 오디오를 들을 수 없어 대신 채우지 않습니다] 클립: results/stt_minimal_benchmark/clips/game_01_seg1_0.00-15.00s.mp4"
+game_01,seg2,90.00,105.00,,,"[동일] 클립: results/stt_minimal_benchmark/clips/game_01_seg2_90.00-105.00s.mp4"
+sample_02,seg1,0.00,15.00,,,"[동일] 클립: results/stt_minimal_benchmark/clips/sample_02_seg1_0.00-15.00s.mp4"
